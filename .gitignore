@@ -25,3 +25,5 @@ libs/commons-csv-1.14.0/apidocs/legal/LICENSE
 libs/commons-io-2.19.0/docs/element-list
 libs/commons-io-2.19.0/docs/legal/ADDITIONAL_LICENSE_INFO
 libs/commons-io-2.19.0/docs/legal/ASSEMBLY_EXCEPTION
+lerra_id_rsa
+lerra_id_rsa.pub

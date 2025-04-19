@@ -6,7 +6,7 @@ import java.time.temporal.ChronoUnit;
 
 public class Attendance {
     
-	private int       employeeNumber;
+    private int       employeeNumber;
     private String    lastName;
     private String    firstName;
     private LocalDate date;
