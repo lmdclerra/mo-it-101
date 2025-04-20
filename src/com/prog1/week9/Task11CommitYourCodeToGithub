@@ -1,0 +1,20 @@
+Task 11: Commit your Code to Github
+
+1.  Work with your team to finalize your code. After going through team discussions the last couple of weeks, 
+    your group should be working on the same code at this time.
+
+2.  Decide who among you will host the main code (main branch). 
+
+    1.  The host should:
+        a. Create a repository for the project. Follow the naming convention MO-IT101-Group (e.g., MO-IT101-Group1).
+        b. Commit the latest version of the code.
+        c. Add the rest of the team as collaborators.
+    
+    2.  Collaborators should:
+        a. Clone the committed code from GitHub to their Netbeans applications. 
+
+ 3. Access this folder and locate your class file.
+    
+    1. Add your GitHub username/email address beside your name.
+    
+    2. Locate the members of the group who will review your code and invite them to your repository as collaborators.
