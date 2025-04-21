@@ -1,3 +1,6 @@
+# MO-IT101 - Computer Programming 1
+Term 2  SY 2023 - 24  Bachelor of Science in Information Technology  A1102
+
 ## COURSE DESCRIPTION
 
 Computer Programming 1 is a 3-unit core course that introduces learners to the first few steps of the software development cycle (planning, analysis, design, implementation, and testing). This course emphasizes the use of problem-solving competencies and the application of basic concepts and techniques of Java programming.  The learnings and insights from this course allow the learners to practice and develop the competencies required to succeed in more complex courses, and eventually thrive in the information technology industry.
