@@ -1,4 +1,4 @@
-# MO-IT101 - Computer Programming 1
+# MO-IT-101 - Computer Programming 1
 Term 2  SY 2023 - 24  Bachelor of Science in Information Technology  A1102
 
 ## COURSE DESCRIPTION
