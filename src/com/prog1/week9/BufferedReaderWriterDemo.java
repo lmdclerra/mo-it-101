@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-/**
+/* 
  * The BufferedReader and BufferedWriter classes, part of the java.io package, add a buffering layer to 
  * FileReader and FileWriter. This buffering significantly improves efficiency during file operations by 
  * minimizing the number of read/write calls to the underlying file system.
@@ -31,7 +31,7 @@ public class BufferedReaderWriterDemo {
 
     public static void main(String[] args) {
 
-        String path = "C:/users/david/eclipse-workspace/mo_it_101/src/com/prog1/week9/";
+        String path = "C:\\Users\\Lerra\\Desktop\\MyCamu\\mo-it-101\\src\\com\\prog1\\week9\\";
         // you can wrap a FileReader and FileWriter with BufferedReader and BufferedWriter respectively
         // to take advantage of the buffering capabilities. The same constructors for FileReader and 
         // FileWriter (e.g., specifying file name or File object) are used within buffered counterparts.                 
@@ -52,6 +52,7 @@ public class BufferedReaderWriterDemo {
                 bufferedWriter.newLine();
             }
         } catch (IOException e) {
+            System.err.println("Error: " + path);
             System.out.println("Error: " + e.getMessage());
         }
 

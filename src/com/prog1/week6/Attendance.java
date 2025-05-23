@@ -57,7 +57,7 @@ public class Attendance {
                ((logOutTime.getMinute() - logInTime.getMinute()) / 60.0); */
         return ChronoUnit.MINUTES.between(logInTime, logOutTime) / 60.0; 
     }
-    
+
     @Override
     public String toString() {
         return String.format("%-10d %-10s %-10s %-10s %-10s %-10s", 

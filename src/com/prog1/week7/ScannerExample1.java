@@ -11,7 +11,7 @@ public class ScannerExample1 {
 		System.out.println("Enter name, age and salary:");
 
 		// String input
-		String name = scanner.nextLine();
+		String name = scanner.nextLine(); 
 
 		// Numerical input
 		int age = scanner.nextInt();

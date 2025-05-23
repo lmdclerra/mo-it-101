@@ -19,7 +19,7 @@ public class ScannerExample2 {
 		System.out.print("Enter a big decimal: ");
 
 		// reads the big decimal
-		BigDecimal value2 = input.nextBigDecimal();
+		BigDecimal value2 = input.nextBigDecimal(); // -10^(-999999999) to 10^(999999999)
 		System.out.println("Using nextBigDecimal(): " + value2);
 
 		input.close();

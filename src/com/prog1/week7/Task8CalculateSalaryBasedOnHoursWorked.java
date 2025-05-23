@@ -297,7 +297,7 @@ public class Task8CalculateSalaryBasedOnHoursWorked {
     private static void processingAttendanceLogs() {
         // Split the attendance data into rows
         String[] rowsOfData = attendanceData.split("\r\n");
-        double[] totalHoursWorkedById = new double[rowsOfData.length]; // Array to store total hours worked for each employee
+        double[] totalHoursWorkedById = new double[/*rowsOfData.length*/34]; // Array to store total hours worked for each employee
 
         for (int i = 0; i < totalHoursWorkedById.length; i++) {
             totalHoursWorkedById[i] = 0; // Initialize each employee's total hours worked to 0
@@ -337,7 +337,7 @@ public class Task8CalculateSalaryBasedOnHoursWorked {
         }                
         
         // Display the total hours worked by each employee over the week
-        for (int i = 0; i < totalHoursWorkedById.length; i++) {
+        for (int i = 0; i < employees.length; i++) {
             if (totalHoursWorkedById[i] == 0) continue; // Skip if no hours worked
             System.out.printf("Total hours worked by %s in 7 days: %.2f hours%n",
                 (i + 10001), totalHoursWorkedById[i]);
@@ -348,7 +348,7 @@ public class Task8CalculateSalaryBasedOnHoursWorked {
         
         // Split the attendance data into rows
         String[] rowsOfData = attendanceData.split("\r\n");
-        double[] totalHoursWorkedById = new double[rowsOfData.length]; // Array to store total hours worked for each employee
+        double[] totalHoursWorkedById = new double[/*rowsOfData.length*/34]; // Array to store total hours worked for each employee
 
         for (int i = 0; i < totalHoursWorkedById.length; i++) {
             totalHoursWorkedById[i] = 0; // Initialize each employee's total hours worked to 0
@@ -388,7 +388,7 @@ public class Task8CalculateSalaryBasedOnHoursWorked {
         }                
         
         // Display the total hours worked by each employee over the week
-        for (int i = 0; i < totalHoursWorkedById.length; i++) {
+        for (int i = 0; i < employees.length; i++) {
             if (totalHoursWorkedById[i] == 0) continue; // Skip if no hours worked
             System.out.printf("Total hours worked by %s in 7 days: %.2f hours%n",
                 (i + 10001), totalHoursWorkedById[i]);
@@ -398,6 +398,7 @@ public class Task8CalculateSalaryBasedOnHoursWorked {
             emp -> {
                 int empIdx = emp.getEmployeeNumber() - 10001; // Calculate the index for the employee in the array
                 double totalHoursWorked = Math.round(totalHoursWorkedById[empIdx] * 100.0) / 100.0; // Round to 2 decimal places
+                // double totalHoursWorked = totalHoursWorkedById[empIdx]; // problematic if not rounded
                 double hourlyRate = emp.getHourlyRate();
                 double oneWeekSalary =  totalHoursWorked * hourlyRate;
                 System.out.printf("%d: One week salary of [%-12s %-6s] for %5.2f hours of worked x %.2f/hour: Php%,.2f%n", 

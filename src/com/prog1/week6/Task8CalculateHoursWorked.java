@@ -290,15 +290,15 @@ public class Task8CalculateHoursWorked {
         "10034,Santos,Beatriz,06/11/2024,10:39,17:46" ;
     
     public static void main(String[] args) {
-        displayEmployeeInformation();
-        processingAttendanceLogs();
+        displayEmployeeInformation();        
+        processingAttendanceLogs();  
     }
     
     private static void processingAttendanceLogs() {
         
         // Split the attendance data into rows
         String[] rowsOfData = attendanceData.split("\r\n");
-        double[] totalHoursWorkedById = new double[rowsOfData.length]; // Array to store total hours worked for each employee
+        double[] totalHoursWorkedById = new double[/*employees.length*/34]; // Array to store total hours worked for each employee
 
         for (int i = 0; i < totalHoursWorkedById.length; i++) {
             totalHoursWorkedById[i] = 0; // Initialize each employee's total hours worked to 0
@@ -338,7 +338,7 @@ public class Task8CalculateHoursWorked {
         }                
         
         // Display the total hours worked by each employee over the week
-        for (int i = 0; i < totalHoursWorkedById.length; i++) {
+        for (int i = 0; i < employees.length; i++) {
             if (totalHoursWorkedById[i] == 0) continue; // Skip if no hours worked
             System.out.printf("Total hours worked by %s in 7 days: %.2f hours%n",
                 (i + 10001), totalHoursWorkedById[i]);

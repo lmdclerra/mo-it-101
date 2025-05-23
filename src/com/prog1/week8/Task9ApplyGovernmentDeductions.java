@@ -292,7 +292,7 @@ public class Task9ApplyGovernmentDeductions {
         "10033,Martinez,Carlos Ian,06/11/2024,10:15,20:21\r\n" + //
         "10034,Santos,Beatriz,06/11/2024,10:39,17:46" ;
 
-        private static Map<Integer, Double> employeeSalaries;
+    private static Map<Integer, Double> employeeSalaries; /* global variable, acessible sa lahat ng methods */
         
     public static void main(String[] args) {
         displayEmployeeInformation();
@@ -315,8 +315,8 @@ public class Task9ApplyGovernmentDeductions {
         for (Entry<Integer, Double> employee : employeeSalaries.entrySet()) {
             int employeeNumber    = employee.getKey(); // get the employee number
             double basicSalary    = employee.getValue(); // get the salary of the employee
-            sssDeduction          += calculateSssDeduction(basicSalary); 
-            philHealthDeduction   += calculatePhilHealthDeduction(basicSalary);
+            sssDeduction          += calculateSssDeduction(basicSalary); // done here
+            philHealthDeduction   += calculatePhilHealthDeduction(basicSalary); 
             pagIbigDeduction      += calculatePagIbigDeduction(basicSalary); 
             withholdingTax        += calculateWitholdingTaxDeduction(basicSalary);
             System.out.printf("| %11d | %,10.2f | %,10.2f | %,10.2f | %,10.2f |%n",             
@@ -427,7 +427,7 @@ public class Task9ApplyGovernmentDeductions {
             {23250, 1035.00},
             {23750, 1057.50},
             {24250, 1080.00},
-            {24750, 1102.50}
+            {24750, 1102.50}            
         };
 
         // iterate through the 2D array to find the corresponding contribution
@@ -443,7 +443,8 @@ public class Task9ApplyGovernmentDeductions {
     }
 
     private static void processingAttendanceLogs() {
-        // Split the attendance data into rows
+        
+        // split the attendance data into rows
         String[] rowsOfData = attendanceData.split("\r\n");
         double[] totalHoursWorkedById = new double[rowsOfData.length]; // Array to store total hours worked for each employee
 

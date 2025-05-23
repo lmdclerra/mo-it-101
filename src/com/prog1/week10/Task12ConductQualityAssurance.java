@@ -61,7 +61,7 @@ Retrieved from https://media.gcflearnfree.org/content/55e078dcbae0135431cfdd45_0
 
 --- continue from here ---
 
-TODO: Task 12: Conduct Quality Assurance
+Task 12: Conduct Quality Assurance
 
 Now that you have a test document, it’s time to practice conducting it. 
 
